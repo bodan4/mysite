@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: #0a192f;
+  color: #ccd6f6;
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #64ffda;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #64ffda;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #64ffda;
+}
+
+.glitch {
+  color: #64ffda;
+  font-weight: bold;
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 red, -2px 0 blue;
+  }
+  20% {
+    text-shadow: -2px 0 green, 2px 0 red;
+  }
+  40% {
+    text-shadow: 2px 2px blue, -2px -2px green;
+  }
+  60% {
+    text-shadow: 2px -2px red, -2px 2px blue;
+  }
+  80% {
+    text-shadow: -2px 2px green, 2px -2px red;
+  }
+  100% {
+    text-shadow: 2px 0 red, -2px 0 blue;
+  }
+}
+
+.section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #64ffda;
+  border-bottom: 1px solid #64ffda;
+  padding-bottom: 0.5rem;
+}
+
+ul.skills {
+  list-style: none;
+  padding: 0;
+}
+
+ul.skills li {
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+ul.skills li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #64ffda;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #8892b0;
+}
+
+#git-link{
+  color: #64ffda;
+  text-decoration: none;
+}
