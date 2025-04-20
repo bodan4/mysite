@@ -1,0 +1,31 @@
+# 🔐 Files
+.env
+.env.local
+.env.*.local
+
+# 🧪 Logs & debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 📦 Node.js deps
+node_modules/
+package-lock.json
+
+# 🛠️ Build & cache
+dist/
+build/
+.cache/
+.tmp/
+netlify.toml
+
+# 💻 OS junk
+.DS_Store
+Thumbs.db
+
+# ⚙️ VSCode config (optional)
+.vscode/
+
+# 🚫 Submodules fix
+.gitmodules
