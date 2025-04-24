@@ -16,7 +16,17 @@ A modern and responsive personal portfolio website built using HTML, CSS, and Ja
 
 
 ## 📨 Contact Form Flow
-├── public/ # Static assets (HTML, CSS, JS) │ ├── index.html │ ├── styles.css │ └── script.js ├── server.js # Node.js backend using Express ├── .env # Environment variables (e.g., email credentials) ├── package.json # Node dependencies and scripts └── README.md
+portfolio/
+├── public/                 # Static assets
+│   ├── index.html          # Main HTML file
+│   ├── styles.css          # Stylesheet
+│   └── script.js           # Frontend logic
+│
+├── server.js               # Express backend (email service)
+├── .env                    # Environment variables (not committed)
+├── package.json            # Project metadata and dependencies
+├── README.md               # Project documentation
+└── LICENSE                 # MIT License
 ---
 
 ## 📨 Contact Form Flow
